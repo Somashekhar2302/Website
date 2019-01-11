@@ -89,19 +89,6 @@ header : {
   ],
   blog:{
     tagline : 'My Blog',
-    title : 'Rocky',
-    posts:[
-      {id: 1, title:'the first author', author:'AD',image:'gallery-image-1.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-      {id: 2, title:'the second author', author:'AD',image:'gallery-image-2.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-      {id: 3, title:'the third author', author:'AD',image:'gallery-image-3.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-      {id: 4, title:'the forth author', author:'AD',image:'gallery-image-4.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-      {id: 5, title:'the fifth author', author:'AD',image:'gallery-image-5.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-      {id: 6, title:'the sixth author', author:'AD',image:'gallery-image-6.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-      {id: 7, title:'the seventh author', author:'AD',image:'gallery-image-1.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-      {id: 8, title:'the eight author', author:'AD',image:'gallery-image-1.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-      {id: 9, title:'the ninth author', author:'AD',image:'gallery-image-1.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-      {id: 10, title:'the tenth author', author:'AD',image:'gallery-image-1.jpg', publishdate:'2019-01-19T07:22Z', excert :'This is the summary'},
-
-    ]
+    title : 'Rocky'
   }
 }

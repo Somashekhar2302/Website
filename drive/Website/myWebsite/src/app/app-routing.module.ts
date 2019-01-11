@@ -13,22 +13,29 @@ import { PricingComponent } from './pricing/pricing.component';
 import { HeaderComponent } from './header/header.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
+import { NotfoundComponent } from './notfound/notfound.component'
+import { RoutegaurdService } from './routegaurd.service';
 
-
-
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: 'Home', component: HeaderComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'contactus', component: ContactusComponent},
   { path: 'About', component: IntroComponent },
   { path: 'Gallery', component: GalleryComponent },
   { path: 'Services', component: ContentComponent },
   { path: 'Testimonials', component: TestimonialComponent },
   { path: 'Clients', component: ClientsComponent },
   { path: 'Pricing', component: PricingComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'Article/:id', component: ArticleComponent }
-
+  { path: 'blog', component: BlogComponent, canActivate: [RoutegaurdService] },
+  { path: 'Article/:id', component: ArticleComponent },
+  { path: '404', component: NotfoundComponent},
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({

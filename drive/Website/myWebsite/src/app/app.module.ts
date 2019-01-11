@@ -16,8 +16,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { ConfigService} from './config.service';
 import { BlogComponent } from './blog/blog.component';
 import { PostComponent } from './post/post.component';
-import { ArticleComponent } from './article/article.component'
-
+import { ArticleComponent } from './article/article.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,11 +41,21 @@ import { ArticleComponent } from './article/article.component'
     NavigationComponent,
     BlogComponent,
     PostComponent,
-    ArticleComponent
+    ArticleComponent,
+    NotfoundComponent,
+    PaginationComponent,
+    LoginComponent,
+    SignupComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [ConfigService],
   bootstrap: [AppComponent]
